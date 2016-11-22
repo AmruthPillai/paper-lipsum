@@ -1,0 +1,25 @@
+{
+  "name": "paper-lipsum",
+  "description": "paper-lipsum &#8212; The Dummy Text Generator Web Component",
+  "main": "paper-lipsum.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/AmruthPillai/paper-lipsum",
+  "_release": "048aa8e3ef",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "048aa8e3ef65c3ee316228bb7470a89753e16473"
+  },
+  "_source": "https://github.com/AmruthPillai/paper-lipsum.git",
+  "_target": "master",
+  "_originalSource": "AmruthPillai/paper-lipsum",
+  "_direct": true
+}

@@ -1,0 +1,77 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+<h3>`paper-lipsum` &#8212; The Dummy Text Generator Web Component</h3>
+
+<p>`paper-lipsum` is a web component created using Polymer to let your display dummy blocks of text on your website using just one tag, instead of having to copy paste the whole block from a website.
+<i>It's as easy as 1-2-3.</i></p>
+
+<h3>Usage:</h3>
+
+<p>All you need to do to get some dummy text is:</p>
+
+```
+<paper-lipsum></paper-lipsum>
+```
+
+<p>I'm not kidding... <strong>that's it!</strong> <small>(I'm starting to sound like I'm overselling this component, aren't I?)</small></p>
+
+<p>But of course, there are a few other ways to manipulate this text too... like displaying a certain number of words:</p>
+
+```
+<paper-lipsum words="200"></paper-lipsum>
+```
+
+<p>You can check this out <strong>in action</strong> on the GitHub demo page: <a href="https://github.com/AmruthPillai/paper-lipsum">https://github.com/AmruthPillai/paper-lipsum</a></p>
+
+@demo demo/index.html
+-->
+
+<dom-module id="paper-lipsum">
+  <template>
+    [[ output ]]
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'paper-lipsum',
+
+      properties: {
+        text: {
+          type: String,
+          value: ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipiscing", "elit,", "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore", "magna", "aliqua.", "Ut", "enim", "ad", "minim", "veniam,", "quis", "nostrud", "exercitation", "ullamco", "laboris", "nisi", "ut", "aliquip", "ex", "ea", "commodo", "consequat.", "Duis", "aute", "irure", "dolor", "in", "reprehenderit", "in", "voluptate", "velit", "esse", "cillum", "dolore", "eu", "fugiat", "nulla", "pariatur.", "Excepteur", "sint", "occaecat", "cupidatat", "non", "proident,", "sunt", "in", "culpa", "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum."],
+        },
+        words: {
+          type: Number,
+        },
+        output: {
+          type: String,
+        }
+      },
+
+      ready: function() {
+        words = (this.words) ? this.words : this.text.length;
+
+        output = (function getWords(text, words) {
+          if (words > text.length) {
+            return text.concat(
+              getWords(text, words - text.length));
+          } else {
+            return text.slice(0, words);
+          }
+        } (this.text, words)).join(" ");
+
+        if (output.charAt(output.length - 1) === ',') {
+          output = output.slice(0, output.length - 1);
+        }
+
+        if (output.charAt(output.length - 1) !== '.') {
+          output += '.';
+        }
+
+        this.output = output;
+      }
+    });
+  </script>
+</dom-module>
