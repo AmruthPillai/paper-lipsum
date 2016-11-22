@@ -14,6 +14,20 @@ Make sure you have npm and bower installed. Then, run this command:
 bower install --save AmruthPillai/paper-lipsum
 ```
 
+Import the `webcomponents.js` script to your webpage, if you haven't already:
+
+```
+<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+```
+
+Then, import the paper-lipsum component to your webpage:
+
+```
+<link rel="import" href="bower_components/paper-lipsum/paper-lipsum.html">
+```
+
+That's all you need to start using the `<paper-lipsum>` tag. Magical, isn't it?
+
 ## Usage
 
 <p>All you need to do to get some dummy text is:</p>
