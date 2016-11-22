@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>paper-lipsum &#8212; The Dummy Text Generator Web Component</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../paper-lipsum.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .help-text {
+        width: 80%;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic: paper-lipsum demo</h3>
+      <small class="help-text">It displays the entire block of text if there are no attributes provided.</small>
+      <demo-snippet>
+        <template>
+          <paper-lipsum></paper-lipsum>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container centered">
+      <h3>Limited # of Words: paper-lipsum demo</h3>
+      <small class="help-text">It displays a specified number of words, provided by the user using the <i>words</i> attribute. All sentences end with a period, even when they're supposed to end with a comma.</small>
+      <demo-snippet>
+        <template>
+          <paper-lipsum words="15"></paper-lipsum>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container centered">
+      <h3>Large # of Words: paper-lipsum demo</h3>
+      <small class="help-text">The whole paragraph is repeated several number of times if a word count larger than the default count is provided.</small>
+      <demo-snippet>
+        <template>
+          <paper-lipsum words="200"></paper-lipsum>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
