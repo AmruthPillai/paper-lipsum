@@ -3,12 +3,12 @@ The Dummy Text Generator Web Component
 
 ## Introduction
 
-<p>`paper-lipsum` is a web component created using Polymer to let your display dummy blocks of text on your website using just one tag, instead of having to copy paste the whole block from a website.
-<i>It's as easy as 1-2-3.</i></p>
+`paper-lipsum` is a web component created using Polymer to let your display dummy blocks of text on your website using just one tag, instead of having to copy paste the whole block from a website.
+<i>It's as easy as 1-2-3.</i>
 
 ## Installation
 
-Make sure you have npm and bower installed. Then, run this command:
+Make sure you have <a href="https://nodejs.org/en/">Node/NPM</a> and <a href="https://bower.io/">Bower</a> installed. Then, run this command:
 
 ```
 bower install --save AmruthPillai/paper-lipsum
@@ -44,7 +44,7 @@ That's all you need to start using the `<paper-lipsum>` tag. Magical, isn't it?
 <paper-lipsum words="200"></paper-lipsum>
 ```
 
-<p>You can check this out <strong>in action</strong> on the demo page: <a href="#">some long link here</a></p>
+<p>You can check this out <strong>in action</strong> on the GitHub demo page: <a href="https://github.com/AmruthPillai/paper-lipsum">https://github.com/AmruthPillai/paper-lipsum</a></p>
 
 ## Build
 
