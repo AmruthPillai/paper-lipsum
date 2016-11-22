@@ -1,6 +1,6 @@
 {
   "name": "paper-lipsum",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "paper-lipsum &#8212; The Dummy Text Generator Web Component",
   "main": "paper-lipsum.html",
   "dependencies": {
