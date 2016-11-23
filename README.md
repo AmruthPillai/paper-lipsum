@@ -50,19 +50,11 @@ That's all you need to start using the `<paper-lipsum>` tag. Magical, isn't it?
 
 ## Demo
 
-<!--
-```
-<custom-element-demo>
-  <template>
-    <link rel="import" href="paper-lipsum.html">
-    <paper-lipsum></paper-lipsum>
-  </template>
-</custom-element-demo>
-```
--->
-```
+<!-- START-HIDDEN-SECTION: Add imports and styling here. -->
+<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+<link rel="import" href="paper-lipsum.html">
+<!-- END-HIDDEN-SECTION: Add the visible part of the demo below. -->
 <paper-lipsum></paper-lipsum>
-```
 
 ## Contributing
 1. Fork it!
