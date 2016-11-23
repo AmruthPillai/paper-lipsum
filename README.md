@@ -48,14 +48,6 @@ That's all you need to start using the `<paper-lipsum>` tag. Magical, isn't it?
 
 <p>You can check this out <strong>in action</strong> on the GitHub demo page: <a href="https://amruthpillai.github.io/paper-lipsum/">https://amruthpillai.github.io/paper-lipsum/</a></p>
 
-## Demo
-
-<!-- START-HIDDEN-SECTION: Add imports and styling here. -->
-<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-<link rel="import" href="paper-lipsum.html">
-<!-- END-HIDDEN-SECTION: Add the visible part of the demo below. -->
-<paper-lipsum></paper-lipsum>
-
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
