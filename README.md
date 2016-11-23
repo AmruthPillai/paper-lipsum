@@ -8,6 +8,23 @@ The Dummy Text Generator Web Component
 
 <h3>Take a look at the <a href="https://amruthpillai.github.io/paper-lipsum/">Documentation & Demo</a></h3>
 
+## Web Component Demo
+
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="paper-lipsum.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<paper-lipsum></paper-lipsum>
+```
+
 ## Installation
 
 Make sure you have <a href="https://nodejs.org/en/">Node/NPM</a> and <a href="https://bower.io/">Bower</a> installed. Then, run this command:
